@@ -9,10 +9,9 @@ router.get("/movies", function (req, res) {
   )
     .then((response) => response.json())
     .then((data) => {
-      res.json({ movies: data });
       console.log(data);
+      res.json({ movies: data });
     });
 });
-
 
 module.exports = router;
